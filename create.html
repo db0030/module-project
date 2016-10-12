@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CREATE A TODO</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link type="text/css" href="/home/dhamneshbangar/Desktop/module-project/styles.css" rel="stylesheet">
+<script type="text/javascript" src="data.js" ></script>
+</head>
+<body>
+
+<script>
+	function store()
+			{
+				var nam = document.getElementById("name").value;
+				var des = document.getElementById("description").value;
+				var prio = document.getElementById("priority").value;
+				var dat = document.getElementById("date").value;
+				var stat = document.getElementById("status").value;
+				document.write("Name:  " + nam + "<br>");
+				document.write("Description: " + des + "<br>");
+				document.write("Priority: " + prio + "<br>");
+				document.write("Date: " + dat + "<br>");
+				document.write("Status: " + stat + "<br>");
+				return false;
+
+			}	
+</script>
+
+
+
+
+
+
+
+
+
+<form onsubmit="return store()" method="post">
+	
+<h1 align="center">CREATE</h1>
+
+<h3>
+	<center><a href="index.html">HOME</a></center>
+</h3>
+<table align="center" width="500px" height="500px" border="solid 10px" cellpadding="5" cellspacing="5">
+	<tr>
+		<td class="td1">NAME</td>
+		<td><input type="text" name="name" id="name"></td>
+	</tr>
+	
+	<tr>
+		<td class="td1">DESCRIPTION</td>
+		<td><input type="text" name="description" id="description"></td>
+	</tr>
+	<tr>
+		<td class="td1">PRIORITY</td>
+		<td>
+			<select id="priority">
+				<option>LOW</option>"
+				<option>HIGH</option>
+				<option>MEDIUM</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="td1">COMPLETION DATE</td>
+		<td><input type="text" name="date" id="date"></td>
+	</tr>
+	<tr>
+		<td class="td1" ="td1">STATUS</td>
+		<td>
+			<select id="status">
+				<option>COMPLETED</option>
+				<option>INTERMEDIATE</option>
+				<option>START</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<h3><td colspan="2"><center><b><input type="submit" name="submit"></b></center></td></h3>
+		
+	</tr>
+</table>
+
+</form>
+</body>
+</html>

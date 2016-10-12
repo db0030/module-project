@@ -1,0 +1,40 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 150px;
+	}
+h1
+{
+	color: brown;
+
+}
+h3{
+
+	margin-left: 1%;
+}
+#ul{
+
+	align-content: left;
+}
+a{
+	margin-left: 200px;
+	text-decoration: none;
+	list-style-type: none;
+	color: brown;
+}
+.td1{
+
+	font-weight: bold;
+}
+a:link,a:visited{
+
+	text-decoration: none;
+	color:brown;
+	font-weight: bold;
+}
+a:hover{
+
+	color: black;
+}
+
+
+
